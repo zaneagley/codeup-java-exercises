@@ -22,6 +22,10 @@ public class Bob {
                 System.out.println("Woah, chill out!");
 
             }
+            else if ((sentence.trim().endsWith(""))) {
+            System.out.println("Fine. Be that way!");
+
+        }
             else {
                 System.out.println("Whatever.");
             }
