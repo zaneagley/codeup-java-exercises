@@ -22,7 +22,7 @@ public class Bob {
                 System.out.println("Woah, chill out!");
 
             }
-            else if ((sentence.trim().endsWith(""))) {
+            else if ((sentence.trim().equals(""))) {
             System.out.println("Fine. Be that way!");
 
         }
