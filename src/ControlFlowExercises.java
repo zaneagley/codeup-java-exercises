@@ -11,14 +11,14 @@ public class ControlFlowExercises {
 //            System.out.print(lessThanFifthteen + " ");
 //        }
 
-
-        long squared = 2;
-
-        do {
-            System.out.println(squared + " ");
-            squared *= squared;
-        } while (squared <= 1000000);
-    }}
+//
+//        long squared = 2;
+//
+//        do {
+//            System.out.println(squared + " ");
+//            squared *= squared;
+//        } while (squared <= 1000000);
+//    }}
 
 
 //        for (int counter = 1; counter <= 100; counter++)
@@ -104,3 +104,124 @@ public class ControlFlowExercises {
 
 
 
+
+        // Bonus - Command Line Game
+
+
+
+        System.out.println("----Zorn----");
+        System.out.println("-You are in the Clearing-");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("         ^");
+        System.out.println("         N");
+        System.out.println("     < E   W > ");
+        System.out.println("         S");
+        System.out.println("         v");
+        System.out.println("Choose a direction:");
+
+        while (true) {
+            String directionChoice = sc.nextLine();
+            if (directionChoice.equals("quit")) {
+                break;
+            }
+            else if (directionChoice.equalsIgnoreCase("n") || directionChoice.equalsIgnoreCase("north")
+                    || directionChoice.equals("North")){
+                System.out.println("You moved north.");
+                System.out.println("----Zorn----");
+                System.out.println("-You are in the Clearing-");
+                System.out.println(" ");
+                System.out.println(" ");
+                System.out.println("         ^");
+                System.out.println("         N");
+                System.out.println("     < E   W > ");
+                System.out.println("         S");
+                System.out.println("         v");
+                System.out.println("Choose a direction:");
+            }
+            else if (directionChoice.equalsIgnoreCase("s") || directionChoice.equalsIgnoreCase("south")
+                    || directionChoice.equals("South")){
+                System.out.println("You moved south.");
+                System.out.println("----Zorn----");
+                System.out.println("-You are in the Forest-");
+                System.out.println(" ");
+                System.out.println(" ");
+                System.out.println("         ^");
+                System.out.println("         N");
+                System.out.println("     < E   W > ");
+                System.out.println("         S");
+                System.out.println("         v");
+                System.out.println("Choose a direction:");
+            }
+            else if (directionChoice.equalsIgnoreCase("w") || directionChoice.equalsIgnoreCase("west")
+                    || directionChoice.equals("West")){
+                System.out.println("You moved west.");
+                System.out.println("----Zorn----");
+                System.out.println("-You are in the Forest-");
+                System.out.println(" ");
+                System.out.println(" ");
+                System.out.println("         ^");
+                System.out.println("         N");
+                System.out.println("     < E   W > ");
+                System.out.println("         S");
+                System.out.println("         v");
+                System.out.println("Choose a direction:");
+            }
+            else if (directionChoice.equalsIgnoreCase("e") || directionChoice.equalsIgnoreCase("east")
+                    || directionChoice.equals("East")){
+                System.out.println("You moved east.");
+                System.out.println("----Zorn----");
+                System.out.println("-You are in the Clearing-");
+                System.out.println(" ");
+                System.out.println(" ");
+                System.out.println("         ^");
+                System.out.println("         N");
+                System.out.println("     < E   W > ");
+                System.out.println("         S");
+                System.out.println("         v");
+                System.out.println("Choose a direction:");
+            }
+
+
+
+
+
+//            switch (directionChoice) {
+//                case "n":
+//                case "north":
+//                    System.out.println("You moved north");
+//                    directionChoice = "";
+//                    break;
+//                case "s":
+//                case "south":
+//                    System.out.println("You moved south");
+//                    directionChoice = "";
+//                    break;
+//                case "w":
+//                case "west":
+//                    System.out.println("You moved west");
+//                    directionChoice = "";
+//                    break;
+//                case "e":
+//                case "east":
+//                    System.out.println("You moved east");
+//                    directionChoice = "";
+//                    break;
+//                default:
+//                    System.out.println("Please type in a direction. (N,S,W,E)");
+//                    directionChoice = "";
+//                    break;
+//
+//            }
+        }
+
+
+
+
+
+
+
+
+
+    }
+}
