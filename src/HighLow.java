@@ -46,14 +46,10 @@ public class HighLow {
 
             }
             if (numToGuess > numGuessed && i < 10) {
-                System.out.println(numToGuess);
-                System.out.println(numGuessed);
                 System.out.println("Higher!");
                 i++;
                 numGuessed = promptUser();
             } else if (numToGuess < numGuessed && i < 10) {
-                System.out.println(numToGuess);
-                System.out.println(numGuessed);
                 System.out.println("Lower!");
                 i++;
                 numGuessed = promptUser();

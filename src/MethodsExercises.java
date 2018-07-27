@@ -8,10 +8,10 @@ public class MethodsExercises {
         Scanner sc = new Scanner(System.in);
 
         // System.out.println(isOne("1"));
-       // System.out.println(getInteger(1, 10));
+        System.out.println(getInteger(1, 10));
         // diceRoll(1, 6);
 
-        System.out.println(Factorial(5));
+       // System.out.println(Factorial(5));
 
 
 
@@ -99,10 +99,14 @@ public class MethodsExercises {
         }while (userContinues);
 
     }
-    public static int Factorial(int num) {
+
+
+
+
+    public static int factorial(int num) {
         if (num <= 1)
             return 1;
-        return num * Factorial(num - 1);
+        return num * factorial(num - 1);
     }
 
 
