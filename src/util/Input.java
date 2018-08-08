@@ -30,8 +30,19 @@ public class Input {
     }
 
     public int getInt() {
-        int number = sc.nextInt();
-        return number;
+        int trueNum;
+        while(true) {
+            try {
+                String number = sc.next();
+                trueNum = Integer.valueOf(number);
+                break;
+
+            } catch (NumberFormatException e) {
+                System.out.println("Please input a integer.");
+            }
+
+        }
+        return trueNum;
     }
 
     public double getDouble(double min, double max) {
@@ -43,8 +54,16 @@ public class Input {
     }
 
     public double getDouble() {
-        int number = sc.nextInt();
-        return number;
+        double truenum;
+        while (true)
+            try {
+                String number = sc.next();
+                truenum = Double.valueOf(number);
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("Please input a number.");
+            }
+        return truenum;
     }
 
 
@@ -78,14 +97,20 @@ public class Input {
     }
 
     public int getInt(String prompt) {
-        System.out.println(prompt);
-        int number = sc.nextInt();
-        return number;
+        try {
+            System.out.println(prompt);
+            int number = sc.nextInt();
+            return number;
+        } catch (Exception e) {
+            System.out.println("Please input a integer.");
+            int number = sc.nextInt();
+            return number;
+        }
     }
 
     public double getDouble(double min, double max, String prompt) {
         System.out.println(prompt);
-        int number = sc.nextInt();
+        double number = sc.nextInt();
         while (true) if (number < max && number > min) return number;
         else {
             System.out.println(prompt);
@@ -94,9 +119,15 @@ public class Input {
     }
 
     public double getDouble(String prompt) {
-        System.out.println(prompt);
-        int number = sc.nextInt();
-        return number;
+        try {
+            System.out.println(prompt);
+            double number = sc.nextInt();
+            return number;
+        } catch (Exception e) {
+            System.out.println("Please input a double number.");
+            double number = sc.nextInt();
+            return number;
+        }
     }
 
 
